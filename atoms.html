@@ -182,6 +182,10 @@ footer a{color:#D6D9EE}
 }
 .figure-compact{max-width:330px;margin-left:auto;align-self:start}
 @media (max-width:700px){.figure-compact{margin:0 auto}}
+/* four-function blocks render as a 2 by 2 quadrant, never a wrapping row */
+.quad{grid-template-columns:repeat(2,1fr);gap:20px}
+.quad > .card{height:100%}
+@media (max-width:760px){.quad{grid-template-columns:1fr}}
 
 </style>
 </head>
@@ -240,7 +244,7 @@ footer a{color:#D6D9EE}
     <h2>A closed loop around the forearm</h2>
     <p class="sec-lede">We think of tremor the way an audio engineer thinks of unwanted sound. The tremor is one component of a signal that also carries what the person means to do. Our aim is to cancel the first and pass the second.</p>
 
-    <div class="grid g4" style="text-align:left;margin-bottom:36px">
+    <div class="grid quad" style="text-align:left;margin-bottom:36px">
       <div class="card fn" style="--c:var(--blue)">
         <p class="n">01</p><h3>Read at the elbow</h3>
         <p>The elbow sensor picks up the motor signal on its way to the hand, before the movement has happened.</p>

@@ -182,6 +182,10 @@ footer a{color:#D6D9EE}
 }
 .figure-compact{max-width:330px;margin-left:auto;align-self:start}
 @media (max-width:700px){.figure-compact{margin:0 auto}}
+/* four-function blocks render as a 2 by 2 quadrant, never a wrapping row */
+.quad{grid-template-columns:repeat(2,1fr);gap:20px}
+.quad > .card{height:100%}
+@media (max-width:760px){.quad{grid-template-columns:1fr}}
 
 </style>
 </head>
@@ -217,7 +221,7 @@ footer a{color:#D6D9EE}
     <p class="eyebrow">Capabilities</p>
     <h2>Four functions on one engine</h2>
     <p class="sec-lede">Most neurotechnology does one job. HemiLogic is architected so a single inference engine carries a device across the full arc of care, from the first ambiguous sign to the intervention that follows.</p>
-    <div class="grid g4" style="text-align:left">
+    <div class="grid quad" style="text-align:left">
       <div class="card fn" style="--c:var(--blue)">
         <p class="n">01</p><h3>Detect</h3>
         <p>Surface the neurological signal that a periodic clinic visit misses, in the environment where the patient actually lives.</p>
