@@ -159,7 +159,7 @@ footer a{color:#E2E8F0}
   .f-links{margin-left:0;width:100%}
 }
 
-/* ---------- ATMOS page additions ---------- */
+/* ---------- product page additions ---------- */
 .badge{display:inline-block;font-family:var(--sans);font-size:11.5px;letter-spacing:.18em;
   text-transform:uppercase;font-weight:600;color:var(--muted);border:1px solid var(--line);
   border-radius:999px;padding:6px 15px;background:#fff;margin-bottom:22px}
@@ -203,6 +203,10 @@ footer a{color:#E2E8F0}
 .fn .ico svg{width:100%;height:100%;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
 .fn .line{font-family:var(--sans);font-weight:500;font-size:14px;color:var(--ink);margin:0 0 8px}
 
+/* product wordmark: first half Midnight like "Hemi", second half gradient like "Logic" */
+.wm{color:var(--ink);font-weight:600;letter-spacing:-.02em}
+.wm b{font-weight:600;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+
 </style>
 </head>
 <body>
@@ -212,7 +216,7 @@ footer a{color:#E2E8F0}
     <a href="index.html"><img src="data:image/webp;base64,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" alt="HemiLogic"></a>
     <nav class="nav-links">
       <a href="index.html" class="on">Home</a>
-      <a href="atmos.html">ATMOS</a>
+      <a href="steadyhand.html">SteadyHand</a>
       <a href="technology.html">Technology</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
@@ -264,7 +268,7 @@ footer a{color:#E2E8F0}
 <section class="alt">
   <div class="wrap">
     <p class="eyebrow">The platform</p>
-    <h2>The HemiSense Array</h2>
+    <h2>The <span class="wm">Hemi<b>Sense</b></span> Array</h2>
     <div class="grid g2" style="align-items:center">
       <div>
         <p>The HemiSense Array is our wearable sensor network and the hardware every HemiLogic product is built on. Seven sites read nervous system signals and interpret them so they can drive assistive devices.</p>
@@ -305,21 +309,21 @@ footer a{color:#E2E8F0}
 <section>
   <div class="wrap">
     <p class="eyebrow">First product</p>
-    <h2>ATMOS</h2>
+    <h2><span class="wm">Steady<b>Hand</b></span> sleeves</h2>
     <div class="card" style="border-top:3px solid var(--c3)">
       <div class="grid g2" style="align-items:center;gap:26px">
         <div>
-          <h3 style="font-size:22px;margin-bottom:6px">Active Tremors Mitigation Online-Learning Sleeves</h3>
+          <h3 style="font-size:22px;margin-bottom:6px">Tremor mitigation on the HemiSense Array</h3>
           <p style="margin-bottom:14px">A forearm sleeve in development that reads the motor signal at the elbow, predicts the tremor riding on it, and delivers an out of phase impulse so the wearer's intended movement comes through. It is the first product on our HemiSense Array.</p>
           <div class="pill-row" style="margin-bottom:20px">
             <span class="pill" style="color:var(--c2)">Monitor</span>
             <span class="pill" style="color:var(--c3)">Treat</span>
             <span class="pill" style="color:var(--c4)">Predict</span>
           </div>
-          <a class="btn btn-s" style="padding:11px 22px;font-size:14px" href="atmos.html">See how ATMOS works</a>
+          <a class="btn btn-s" style="padding:11px 22px;font-size:14px" href="steadyhand.html">See how SteadyHand works</a>
         </div>
         <div>
-          <svg viewBox="0 0 360 150" role="img" aria-label="Diagram of the ATMOS loop from elbow sensor to model to sleeve impulse to wrist accelerometer and back">
+          <svg viewBox="0 0 360 150" role="img" aria-label="Diagram of the SteadyHand loop from elbow sensor to model to sleeve impulse to wrist accelerometer and back">
             <g font-family="Inter, system-ui, sans-serif" font-size="11.5">
               <line x1="40" y1="46" x2="320" y2="46" stroke="#E2E8F0" stroke-width="2"/>
               <circle cx="40" cy="46" r="11" fill="#3B82F6"/>
@@ -441,7 +445,7 @@ footer a{color:#E2E8F0}
       </div>
       <div class="f-links">
         <a href="index.html">Home</a>
-        <a href="atmos.html">ATMOS</a>
+        <a href="steadyhand.html">SteadyHand</a>
         <a href="technology.html">Technology</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
