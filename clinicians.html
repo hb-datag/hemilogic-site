@@ -277,6 +277,25 @@ footer a{color:#E2E8F0}
 .qa dd{margin:0 0 22px;color:var(--ink-2);font-size:16px}
 .qa dd:last-child{margin-bottom:0}
 
+/* product photography */
+.hero-split{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;text-align:left;margin-top:8px}
+.hero-split h1{margin-left:0;margin-right:0;max-width:16ch}
+.hero-split .plain{margin-left:0;margin-right:0}
+.hero-split .btns{justify-content:flex-start}
+.shot{position:relative;display:flex;justify-content:center;align-items:center}
+.shot::before{content:"";position:absolute;inset:8% 6%;border-radius:50%;
+  background:radial-gradient(closest-side,rgba(139,92,246,.16),rgba(236,72,153,.08) 55%,transparent 75%);z-index:0}
+.shot img{position:relative;z-index:1;width:100%;max-width:420px;height:auto;filter:drop-shadow(0 18px 30px rgba(15,23,42,.18))}
+.shot .figcap{position:relative;z-index:1}
+.shot-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px 22px 20px;display:flex;flex-direction:column;align-items:center}
+.shot-card img{max-width:360px}
+@media (max-width:820px){
+  .hero-split{grid-template-columns:1fr;gap:26px;text-align:center}
+  .hero-split h1,.hero-split .plain{margin-left:auto;margin-right:auto}
+  .hero-split .btns{justify-content:center}
+  .shot img{max-width:min(320px,72vw)}
+}
+
 </style>
 </head>
 <body>
@@ -353,12 +372,12 @@ footer a{color:#E2E8F0}
 <section class="alt">
   <div class="wrap">
     <p class="eyebrow">First add-on</p>
-    <h2><span class="wm">Steady<b>Hand</b></span>: a closed loop on the forearm.</h2>
+    <h2><span class="wm">Sure<b>Hand</b></span>: a closed loop on the forearm.</h2>
     <div class="grid g2" style="align-items:start">
       <div>
-        <p>The HemiSense Array is the sensing and inference layer and, worn alone, a detection, monitoring and prediction instrument. SteadyHand is the first add-on that acts on it, using two of the seven sites. The elbow sensor reads the efferent motor signal before the movement occurs. The inference layer separates intended movement from the tremor component and predicts the tremor's next phase. Conductive wire woven into an elastic forearm sleeve delivers an out of phase impulse to oppose the tremor component. A wrist accelerometer measures the actual hand motion and closes the loop, tuning the model continuously to the individual.</p>
+        <p>The HemiSense Array is the sensing and inference layer and, worn alone, a detection, monitoring and prediction instrument. SureHand is the first add-on that acts on it, using two of the seven sites. The elbow sensor reads the efferent motor signal before the movement occurs. The inference layer separates intended movement from the tremor component and predicts the tremor's next phase. Conductive wire woven into an elastic forearm sleeve delivers an out of phase impulse to oppose the tremor component. A wrist accelerometer measures the actual hand motion and closes the loop, tuning the model continuously to the individual.</p>
         <p>The intervention is the counter-impulse itself. There is no drug delivery and no rigid actuator on the moving segment. The same measurements that drive the loop are recorded, so the device is a longitudinal instrument as well as an intervention.</p>
-        <a class="btn btn-s" style="padding:11px 22px;font-size:14px" href="products.html#steadyhand">Full product detail</a>
+        <a class="btn btn-s" style="padding:11px 22px;font-size:14px" href="products.html#surehand">Full product detail</a>
       </div>
       <div class="note">
         <p><strong>Status.</strong> Pre-clinical. Engine development and evaluation against public and partner neurological datasets. No human testing has been performed. We are seeking collaborators for a feasibility study under IRB oversight, and we would rather design the outcome measures with you than present them to you.</p>
@@ -372,7 +391,7 @@ footer a{color:#E2E8F0}
     <p class="eyebrow">Indications</p>
     <h2>Four we are evaluating, in the order the evidence allows.</h2>
     <div class="grid g4">
-      <div class="card fn" style="--c:var(--c1)"><h3>Parkinson's disease</h3><p>Motor fluctuation, tremor and gait, and response to medication across the day. Lead candidate, because SteadyHand gives it a concrete first instrument.</p></div>
+      <div class="card fn" style="--c:var(--c1)"><h3>Parkinson's disease</h3><p>Motor fluctuation, tremor and gait, and response to medication across the day. Lead candidate, because SureHand gives it a concrete first instrument.</p></div>
       <div class="card fn" style="--c:var(--c2)"><h3>Epilepsy</h3><p>Event detection, and the harder problem underneath it: forecasting risk before onset from autonomic and cortical precursors.</p></div>
       <div class="card fn" style="--c:var(--c3)"><h3>Cognitive decline</h3><p>Early signal and progression tracking in Alzheimer's disease and related dementias, ambulatory rather than episodic.</p></div>
       <div class="card fn" style="--c:var(--c4)"><h3>Stroke recovery</h3><p>Objective measurement of neurorehabilitation between therapy sessions, with limb use and gait as primary signals.</p></div>

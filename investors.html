@@ -277,6 +277,25 @@ footer a{color:#E2E8F0}
 .qa dd{margin:0 0 22px;color:var(--ink-2);font-size:16px}
 .qa dd:last-child{margin-bottom:0}
 
+/* product photography */
+.hero-split{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;text-align:left;margin-top:8px}
+.hero-split h1{margin-left:0;margin-right:0;max-width:16ch}
+.hero-split .plain{margin-left:0;margin-right:0}
+.hero-split .btns{justify-content:flex-start}
+.shot{position:relative;display:flex;justify-content:center;align-items:center}
+.shot::before{content:"";position:absolute;inset:8% 6%;border-radius:50%;
+  background:radial-gradient(closest-side,rgba(139,92,246,.16),rgba(236,72,153,.08) 55%,transparent 75%);z-index:0}
+.shot img{position:relative;z-index:1;width:100%;max-width:420px;height:auto;filter:drop-shadow(0 18px 30px rgba(15,23,42,.18))}
+.shot .figcap{position:relative;z-index:1}
+.shot-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px 22px 20px;display:flex;flex-direction:column;align-items:center}
+.shot-card img{max-width:360px}
+@media (max-width:820px){
+  .hero-split{grid-template-columns:1fr;gap:26px;text-align:center}
+  .hero-split h1,.hero-split .plain{margin-left:auto;margin-right:auto}
+  .hero-split .btns{justify-content:center}
+  .shot img{max-width:min(320px,72vw)}
+}
+
 </style>
 </head>
 <body>
@@ -331,7 +350,7 @@ footer a{color:#E2E8F0}
     <div class="facts" style="margin-top:30px">
       <div class="fact"><b>1 in 3</b><span>people worldwide live with a neurological condition, the leading cause of illness and disability globally.</span><small><a href="https://www.who.int/news/item/14-03-2024-over-1-in-3-people-affected-by-neurological-conditions--the-leading-cause-of-illness-and-disability-worldwide" target="_blank" rel="noopener">WHO, 2024</a></small></div>
       <div class="fact"><b>4</b><span>indications under evaluation: Parkinson's disease, epilepsy, cognitive decline, stroke recovery. Each is a rule base on the same array.</span></div>
-      <div class="fact"><b>1</b><span>first add-on. SteadyHand, a tremor sleeve on two of the seven sites, gives the array a concrete first instrument and a clear first study.</span></div>
+      <div class="fact"><b>1</b><span>first add-on. SureHand, a tremor sleeve on two of the seven sites, gives the array a concrete first instrument and a clear first study.</span></div>
       <div class="fact"><b>0</b><span>drugs, surgeries or rigid actuators in the first add-on. The intervention is an out of phase electrical impulse through woven fabric.</span></div>
     </div>
     <p style="margin-top:26px;color:var(--ink-2);max-width:70ch">We are careful with market language on a site clinicians also read. The overview shared under NDA carries the indication analysis, the addressable population figures with sources, and the regulatory pathway by indication and risk class.</p>
@@ -343,9 +362,9 @@ footer a{color:#E2E8F0}
     <p class="eyebrow">Where we are</p>
     <h2>Pre-clinical, with the architecture defined and the first product designed.</h2>
     <div class="grid g4" style="text-align:left">
-      <div class="card"><p class="tag">Now</p><h3>Bench and archive</h3><p>Engine development and evaluation against public and partner neurological datasets. Elbow and wrist sites and the SteadyHand sleeve designed. The other five sites follow.</p></div>
+      <div class="card"><p class="tag">Now</p><h3>Bench and archive</h3><p>Engine development and evaluation against public and partner neurological datasets. Elbow and wrist sites and the SureHand sleeve designed. The other five sites follow.</p></div>
       <div class="card"><p class="tag">Next</p><h3>Feasibility</h3><p>Prototype hardware and signal quality testing with clinical partners under IRB oversight. Outcome measures co-designed with movement disorder clinicians.</p></div>
-      <div class="card"><p class="tag">Then</p><h3>Clinical study</h3><p>Prospective evaluation of SteadyHand against accepted clinical reference standards in the lead indication.</p></div>
+      <div class="card"><p class="tag">Then</p><h3>Clinical study</h3><p>Prospective evaluation of SureHand against accepted clinical reference standards in the lead indication.</p></div>
       <div class="card"><p class="tag">Later</p><h3>Regulatory</h3><p>Submission pathway determined by indication, claim and risk classification. Second indication begins as a rule base on the same array.</p></div>
     </div>
   </div>
@@ -366,7 +385,7 @@ footer a{color:#E2E8F0}
 <section>
   <div class="wrap">
     <p class="eyebrow">What we are raising for</p>
-    <h2>Getting SteadyHand to a first study, and the platform to its second indication.</h2>
+    <h2>Getting SureHand to a first study, and the platform to its second indication.</h2>
     <div class="grid g2" style="align-items:start">
       <ul class="list">
         <li>Prototype hardware for the elbow and wrist sites and the woven sleeve</li>
